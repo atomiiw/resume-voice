@@ -105,6 +105,7 @@ Plain verb → named artifact → appositive saying what it is and who it's for 
 - Never estimate, round up, add "~", convert currency, or invent scale or percentages. No bullet needs a metric.
 - With no number, end on a concrete fact: who uses it, what it replaced, what happens now that didn't before.
 - Don't upgrade status: merged ≠ deployed, piloted ≠ adopted, proposed ≠ shipped, available ≠ enabled everywhere.
+- The result tail states the new state or the gain, never the old failure ("stalled 10 minutes", "never worked"). A before-state appears only inside a from→to contrast that ends on the gain.
 - A precedent never lends its scale. Evoking Tesla doesn't make 60 users sound like millions.
 
 ## Self-check before showing a draft
