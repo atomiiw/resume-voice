@@ -50,6 +50,8 @@ Find the missing detail that would most amplify each point: the size of the befo
 
 ### 5. Write
 
+- **Start from the user's latest draft.** If they already have a version, it is the base: make the fewest edits that fix facts and sharpen the point, and show each edit against their sentence. Don't redraft from scratch in your own phrasing.
+- **Readable on first pass beats short.** Someone outside the project must understand each bullet without rereading. Compression never produces noun stacks ("maps the goal to missing inputs"), unexplained shorthand ("65–81s", "veterans"), or a contrast the reader has to decode. If cutting makes it cryptic, keep the longer, plain sentence.
 - **Every clause serves the bullet's one point.** A clause that adds a second achievement, a process step or background the point doesn't need gets cut, however true it is. If a second point truly matters, it gets its own bullet, or it goes.
 - **Evoke the precedent; never cite it.** Borrow its angle: what it chose to measure, what it removed, the before→after contrast it is known for, the side of the story it tells. Never use its name, slogan, signature phrase or obvious paraphrase. Test: the reader should feel this person is sharp without being able to say which product or person it reminds them of. If the source is recognizable, pull back.
   Example: the Tesla spirit is "count the user's actions, then cut them". A bullet that measures setup in messages ("from idea to running batch in two messages") carries it. Writing "few-click", "frictionless ordering" or naming Tesla does not.
