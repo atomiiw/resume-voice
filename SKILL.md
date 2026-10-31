@@ -49,10 +49,15 @@ What all three share: one artifact or technical act per bullet; the hard part is
 - **What the artifact does is a relative clause on the artifact, never a connector clause.** "a bot that answers in exact steps" is fine; "…knowledge base, so it answers in exact steps" gives a mid-bullet finite verb to the artifact and fails.
 - **No symbols or chat shorthand as words.** "the group's first @ before a human" is unreadable; write "first stop before a human" or "users @-mention it before a human".
 - **A from-state names its object.** "(a ~10-minute run, no runnable plan)" leaves "run of what" and "plan of what" open; "from a planner that ran 10 minutes without producing a test plan" does not.
+- **No stacked prepositions, no yoked objects.** "a database the bot answers from in exact steps and the right screenshot" stacks "from in" and hangs "screenshot" off "in". Read each bullet aloud once; a stumble is a rewrite.
 - **A number stays on the noun it came with.** "10–12 root causes per meeting" cannot become "10–12 downvotes a week". Before using any number, name the noun it modifies in the source and keep that noun.
 - **Mechanism nouns at reader level.** "declared questions and dependencies" is design-doc shorthand; "a script that asks only for what is missing and orders the steps" is what a reader can picture.
 
-**A design-decision bullet needs a consequence.** Stating the architecture ("model fills slots, code decides") shows taste; a reader believes it only with a from→to or an adoption specific after it. The "from" may be the old failure ("from an agent that never produced a runnable plan to one that launches on the second message"); the ending is always the new state.
+**A design-decision bullet needs a consequence, and has a fixed shape.** Stating the architecture ("model fills slots, code decides") shows taste; a reader believes it only with an outcome. Use this skeleton:
+
+> [Redesigned/Split] [artifact] from [before-state as a noun phrase with its number] to [outcome as a noun phrase]: [component] does X, [component] does Y.
+
+Both sides of the from→to are **noun phrases** ("from about 10 minutes of unbounded model planning to a launch on the second message"). A relative clause on the from-side ("from one that let the model plan", "from the version that…") is the banned before-state form, and a "to" that names a structure ("to two parts") is not an outcome. The colon list after it carries the mechanism. If the outcome and the mechanism don't both fit in two lines, the mechanism loses a component, never the outcome.
 
 **Project entries** get a one-line plain description under the title ("In-store AI try-on: scan a tag, upload a photo, preview fit across sizes."), so the bullets can be purely technical.
 
@@ -64,7 +69,7 @@ What all three share: one artifact or technical act per bullet; the hard part is
 
 **Length.** 1–2 lines in the target layout (the user's current layout fits about 84 characters per line, so about 170). A third line is allowed only when every clause is a technical specific: a component, a number with a unit, a named mechanism. Never a final line with 1–4 orphan words.
 
-**Rhythm across a section.** Strongest bullet first. Openers differ. Skeletons differ: at most two bullets in a section end on a "; result" tail; the others end on a mechanism, a parenthetical specific, or carry their from→to inside the body. Two bullets never land on the same specific ("two messages" in one, "the second message" in the next reads as the same win twice). Lead with the bullet the target reader would phone you about, which is not always the one with the biggest number. Two to four bullets per experience; coverage is not a goal.
+**Rhythm across a section.** Strongest bullet first. Openers differ. Skeletons differ: at most two bullets in a section end on a "; result" tail; the others end on a mechanism, a parenthetical specific, or carry their from→to inside the body. Two consecutive bullets never share a skeleton (two from→to bullets in a row, both landing on "two…", read as one shape twice). Two bullets never land on the same specific ("two messages" in one, "the second message" in the next reads as the same win twice). Lead with the bullet the target reader would phone you about, which is not always the one with the biggest number. Two to four bullets per experience; coverage is not a goal.
 
 ## 2. Workflow
 
