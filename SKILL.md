@@ -48,6 +48,7 @@ What all three share: one artifact or technical act per bullet; the hard part is
 - **Verbs belong to the thing that does them.** A database stores; the bot answers. "a knowledge base that answers" makes the reader stumble; "a knowledge base the bot answers from" does not.
 - **What the artifact does is a relative clause on the artifact, never a connector clause.** "a bot that answers in exact steps" is fine; "…knowledge base, so it answers in exact steps" gives a mid-bullet finite verb to the artifact and fails.
 - **No symbols or chat shorthand as words.** "the group's first @ before a human" is unreadable; write "first stop before a human" or "users @-mention it before a human".
+- **A from-state names its object.** "(a ~10-minute run, no runnable plan)" leaves "run of what" and "plan of what" open; "from a planner that ran 10 minutes without producing a test plan" does not.
 - **A number stays on the noun it came with.** "10–12 root causes per meeting" cannot become "10–12 downvotes a week". Before using any number, name the noun it modifies in the source and keep that noun.
 - **Mechanism nouns at reader level.** "declared questions and dependencies" is design-doc shorthand; "a script that asks only for what is missing and orders the steps" is what a reader can picture.
 
