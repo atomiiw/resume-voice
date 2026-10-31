@@ -45,7 +45,10 @@ What all three share: one artifact or technical act per bullet; the hard part is
 - **The implied subject of every verb is the candidate.** "; asked before a human" reads as the candidate asking. A fact about users or the artifact goes in a noun phrase ("; users' first stop before a human") or an artifact-modifying relative clause ("a bot users now @ before a human").
 - **No verbless noun phrase mid-bullet on a comma.** "…threads, answers as exact steps…" misparses as a list. Attach with a participle ("delivering answers as…"), "with", or a parenthetical.
 - **At most one absolute phrase.** "with the model only mapping…, a script computing…" needs a second read. For a two-part mechanism use an infinitive of purpose plus a participle ("Designed X to keep the model to Y, leaving Z to a script that…") or a colon with a compact list ("X: model maps the request to parameters, script computes the plan").
-- **Verbs belong to the thing that does them.** A database stores; the bot answers. "a knowledge base that answers" makes the reader stumble; "so the bot answers in exact steps" does not.
+- **Verbs belong to the thing that does them.** A database stores; the bot answers. "a knowledge base that answers" makes the reader stumble; "a knowledge base the bot answers from" does not.
+- **What the artifact does is a relative clause on the artifact, never a connector clause.** "a bot that answers in exact steps" is fine; "…knowledge base, so it answers in exact steps" gives a mid-bullet finite verb to the artifact and fails.
+- **No symbols or chat shorthand as words.** "the group's first @ before a human" is unreadable; write "first stop before a human" or "users @-mention it before a human".
+- **A number stays on the noun it came with.** "10–12 root causes per meeting" cannot become "10–12 downvotes a week". Before using any number, name the noun it modifies in the source and keep that noun.
 - **Mechanism nouns at reader level.** "declared questions and dependencies" is design-doc shorthand; "a script that asks only for what is missing and orders the steps" is what a reader can picture.
 
 **A design-decision bullet needs a consequence.** Stating the architecture ("model fills slots, code decides") shows taste; a reader believes it only with a from→to or an adoption specific after it. The "from" may be the old failure ("from an agent that never produced a runnable plan to one that launches on the second message"); the ending is always the new state.
@@ -71,7 +74,11 @@ For a new resume, target or experience, run all steps. For a one-line tweak, run
 3. **One point, one precedent, per bullet.** Pick the single most memorable thing as the target reader sees it. Find one gold-standard case in the target industry that shares its spirit. State why the user's version is hard compared to it. Show this as a table; the precedent never enters the resume.
 4. **Interview, one question per message.** Most valuable gap first; say in one line why it matters. Open questions only: never suggest an answer, a number or a framing. Stop when each point can land.
 5. **Write** to the register spec. Evoke the precedent through its angle (what it measured, what it removed, its from→to) and never through its name, slogan or recognisable phrase. Under each bullet, one line: the point, and what was cut to protect it.
-6. **Judge before showing.** Run `evals/rubric.md` on every bullet yourself, criterion by criterion. If a subagent is available, give it only the rubric, the facts and the draft, and let it judge blind. A bullet that fails any criterion is not shown to the user.
+6. **Judge before showing.** Principles are not enough here: writers who had read every rule above still produced comma-attached noun phrases and moved a number onto a different noun. Do this mechanically, in writing, for every bullet:
+   - **Grammar parse.** Write out: the opener (verb form); every comma-attached phrase with its head word (a participle, or an appositive noun renaming the artifact, is fine; any other bare noun such as "setup" or "answers" is a rewrite); every finite verb with its subject (the candidate implied, or a component after a dash/colon; anything else is a rewrite); what follows the semicolon (a verbless noun phrase or a candidate-verb clause only).
+   - **Number trace.** For every number: the source line, the noun it modifies there, the noun it modifies in the bullet. Different noun = rewrite.
+   - **Outsider read.** Underline every noun a reader outside the project could not picture, and every symbol used as a word.
+   - Then run `evals/rubric.md` criterion by criterion. If a subagent is available, give it only the rubric, the facts and the draft, and let it judge blind. A bullet that fails any criterion is not shown to the user.
 
 ## 3. Keep the user's voice
 
