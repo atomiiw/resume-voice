@@ -78,12 +78,13 @@ For a new resume, target or experience, run all steps. For a one-line tweak, run
 
 1. **Read the sources first.** The conversation, attached files, the notes or vault the user points to, earlier resumes. Ask only for what they don't contain.
 2. **Target brief** (role, company, industry; ask if unknown). Write a few lines for the user: the business and the role's day-to-day; what reads as frontier in that industry today (search the web, it moves fast); the temperament the culture rewards. Every later judgement is against this brief.
-3. **One point, one precedent, per bullet.** Pick the single most memorable thing as the target reader sees it. Find one gold-standard case in the target industry that shares its spirit. State why the user's version is hard compared to it. Show this as a table; the precedent never enters the resume.
+3. **One point, one precedent, per bullet.** Pick the single most memorable thing as the target reader sees it. Find one gold-standard case in the target industry that shares its spirit. State why the user's version is hard compared to it. Show this as a table; the precedent never enters the resume. **End the step with a written "must carry" list per bullet**: the two to four elements without which the point is not expressed (the behaviour, the mechanism that caused it, the scale). This list is a hard constraint on steps 5 and 6; compression cuts optional detail, never a must-carry element.
 4. **Interview, one question per message.** Most valuable gap first; say in one line why it matters. Open questions only: never suggest an answer, a number or a framing. Stop when each point can land.
 5. **Write** to the register spec. Evoke the precedent through its angle (what it measured, what it removed, its from→to) and never through its name, slogan or recognisable phrase. Under each bullet, one line: the point, and what was cut to protect it.
 6. **Judge before showing.** Principles are not enough here: writers who had read every rule above still produced comma-attached noun phrases and moved a number onto a different noun. Do this mechanically, in writing, for every bullet:
    - **Grammar parse.** Write out: the opener (verb form); every comma-attached phrase with its head word (a participle, or an appositive noun renaming the artifact, is fine; any other bare noun such as "setup" or "answers" is a rewrite); every finite verb with its subject (the candidate implied, or a component after a dash/colon; anything else is a rewrite); what follows the semicolon (a verbless noun phrase or a candidate-verb clause only).
    - **Number trace.** For every number: the source line, the noun it modifies there, the noun it modifies in the bullet. Different noun = rewrite.
+   - **Point check.** For every must-carry element from step 3: the words in the bullet that carry it. A missing element is a rewrite, not a shortening.
    - **Outsider read.** Underline every noun a reader outside the project could not picture, and every symbol used as a word.
    - Then run `evals/rubric.md` criterion by criterion. If a subagent is available, give it only the rubric, the facts and the draft, and let it judge blind. A bullet that fails any criterion is not shown to the user.
 
@@ -122,6 +123,7 @@ For a new resume, target or experience, run all steps. For a one-line tweak, run
 | Insider jargon | Outsider can't picture it | "through tool, MCP and skill layers to the one engineers could fix" |
 | College-essay narrative | Person-centred effort story | "root-causing each downvote and arguing user impact against engineering risk until each fix had a named owner" |
 | Metaphor as result | Not a fact | "a vague first message becomes a runnable plan" |
+| Grammatically clean, point lost | Passes every surface rule but drops the mechanism or scale that made the point ("assigning 101 action items" for "ran the weekly loop that turned user downvotes into fixes 15 engineers owned") | A round that passed grammar and facts and was rejected by the user for forgetting what the bullet was for |
 
 The corrected shape for the same facts is always the spec in §1: thing built, for whom, mechanism if it earns its place, number.
 
