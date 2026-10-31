@@ -50,6 +50,7 @@ What all three share: one artifact or technical act per bullet; the hard part is
 - **No symbols or chat shorthand as words.** "the group's first @ before a human" is unreadable; write "first stop before a human" or "users @-mention it before a human".
 - **A from-state names its object.** "(a ~10-minute run, no runnable plan)" leaves "run of what" and "plan of what" open; "from a planner that ran 10 minutes without producing a test plan" does not.
 - **No stacked prepositions, no yoked objects.** "a database the bot answers from in exact steps and the right screenshot" stacks "from in" and hangs "screenshot" off "in". Read each bullet aloud once; a stumble is a rewrite.
+- **A behaviour belongs to the people who do it, at the source's scope.** "the 4,500-member group's first stop" makes the whole group the actor; the source says "users … first". Write "users in the 4,500-member group" or "first stop before a human for users in…".
 - **A number stays on the noun it came with.** "10–12 root causes per meeting" cannot become "10–12 downvotes a week". Before using any number, name the noun it modifies in the source and keep that noun.
 - **Mechanism nouns at reader level.** "declared questions and dependencies" is design-doc shorthand; "a script that asks only for what is missing and orders the steps" is what a reader can picture.
 
@@ -57,7 +58,7 @@ What all three share: one artifact or technical act per bullet; the hard part is
 
 > [Redesigned/Split] [artifact] from [before-state as a noun phrase with its number] to [outcome as a noun phrase]: [component] does X, [component] does Y.
 
-Both sides of the from→to are **noun phrases** ("from about 10 minutes of unbounded model planning to a launch on the second message"). A relative clause on the from-side ("from one that let the model plan", "from the version that…") is the banned before-state form, and a "to" that names a structure ("to two parts") is not an outcome. The colon list after it carries the mechanism. If the outcome and the mechanism don't both fit in two lines, the mechanism loses a component, never the outcome.
+The from→to hangs on a verb that takes one ("cutting setup from…to…", "taking a run from…to…"), never on "Split" or "Redesigned [artifact]", which read as "separated from". The thing that moved is named ("setup", "a run"), not left to "a launch". Both sides of the from→to are **noun phrases** ("from about 10 minutes of unbounded model planning to a launch on the second message"). A relative clause on the from-side ("from one that let the model plan", "from the version that…") is the banned before-state form, and a "to" that names a structure ("to two parts") is not an outcome. The colon list after it carries the mechanism. If the outcome and the mechanism don't both fit in two lines, the mechanism loses a component, never the outcome.
 
 **Project entries** get a one-line plain description under the title ("In-store AI try-on: scan a tag, upload a photo, preview fit across sizes."), so the bullets can be purely technical.
 
