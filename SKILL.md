@@ -27,16 +27,25 @@ More of the user's own bullets, from their previous resume (shape only):
 > Diagnosed that Gemini content-filter rejects 50%+ of valid requests, built auto-retry with randomized prompt variation.
 > Built a storage system for nested popups (popups in popups) with a fully persisted hierarchy, re-anchoring popups on page reload via DOM text-matching.
 
-What these share: one artifact or technical act per bullet; the hard part is named as a specific mechanism ("permutation and sign ambiguity", "jitter from overlapping movement and angled landings"); industry-standard technology is named (React/ProseMirror, Cinemachine, DOM); a parenthetical carries a concrete specific; a number appears only where one exists. **The result tail is optional.** Most of the user's best bullets end on the mechanism, not a metric. When a number exists, end on it; otherwise end on the most concrete technical specific.
+A third reference the user rates highly is a hardware engineer's resume. Shape only:
 
-**Allowed grammar:** past-tense verb opener with no subject (or a noun-phrase status such as "First design hire for an edtech startup;"); further verbs chained by commas or participles when each names a technical act on the same artifact ("Built X…, designed Y, fixed Z"); appositives ("X, a tool for Y"); a relative clause **that modifies the artifact and says what it does** ("a system that locks the player into its momentum"); prepositional phrases; parentheticals with specifics "(50+ variables, 40+ tokens)"; a from→to phrase; after a semicolon, a verbless noun phrase or a second verb-led clause ("; grew DAU across 350,000+ users").
+> Designing the XNOR banks, popcount trees, and threshold comparators for all 8 neuron lanes — each lane reduces a 16-bit XNOR comparison to a 5-bit population count via a half-adder/full-adder tree before a threshold comparator produces a 1-bit neuron output.
+> Eliminated secret-data-dependent timing side channels across multiple tensor backend operations in a forked open-source ML framework (Burn) by rewriting branching logic into constant-time implementations.
+> Leading redesign of the team's power distribution PCB, increasing continuous current capacity from 20A to 40A while integrating a 97.6% efficient 48V→12V converter, Hall-effect current sensing, precharge, emergency-stop, and protection circuitry.
 
-**Forbidden grammar:** a subject of its own ("I", "the team", "setup", "the version"); a relative clause that introduces a before-state, a comparison or a new subject ("setup that took 8 parameters…", "the version that let the model plan"); narrative connectors ("until", "despite", "after", "then", "while"); metaphorical verbs ("becomes", "turns into", "unlocks"); a clause with its own subject after the semicolon.
+What it adds: present-participle openers for ongoing work ("Leading", "Designing"); coordinated verbs ("Designed and implemented"); numbers with units wherever they exist (25 MHz, 20A to 40A, 97.6%, 2.5 mW); lists of named components are welcome when each is concrete; after a dash or colon, a clause whose subject is a **component of the artifact** explaining how it works is fine ("— each lane reduces…"); a bullet may run to a third line when every clause is a technical specific.
+
+What all three share: one artifact or technical act per bullet; the hard part is named as a specific mechanism ("permutation and sign ambiguity", "jitter from overlapping movement and angled landings"); industry-standard technology is named (React/ProseMirror, Cinemachine, DOM); a parenthetical carries a concrete specific; a number appears only where one exists. **The result tail is optional.** Most of the user's best bullets end on the mechanism, not a metric. When a number exists, end on it; otherwise end on the most concrete technical specific.
+
+**Allowed grammar:** verb opener with no subject: past tense for finished work, present participle for ongoing work ("Leading redesign of…"), optionally preceded by one adverb ("Independently instructing"), or a noun-phrase status such as "First design hire for an edtech startup;"; coordinated verbs ("Designed and implemented"); after a dash or colon, a finite clause whose subject is a component of the artifact and which explains the mechanism ("— each lane reduces a 16-bit comparison to a 5-bit count"); further verbs chained by commas or participles when each names a technical act on the same artifact ("Built X…, designed Y, fixed Z"); appositives ("X, a tool for Y"); a relative clause **that modifies the artifact and says what it does** ("a system that locks the player into its momentum"); prepositional phrases; parentheticals with specifics "(50+ variables, 40+ tokens)"; a from→to phrase; after a semicolon, a verbless noun phrase or a second verb-led clause ("; grew DAU across 350,000+ users").
+
+**Forbidden grammar:** a main-clause subject that is the person, the team, a before-state or an old version ("I", "the team", "setup", "the version"); a relative clause that introduces a before-state, a comparison or a new subject ("setup that took 8 parameters…", "the version that let the model plan"); narrative connectors ("until", "despite", "after", "then", and "while" when it sequences a story; "while integrating X" as a simultaneous technical act is fine); metaphorical verbs ("becomes", "turns into", "unlocks"); a clause with its own subject after the semicolon.
 
 **Four traps the grammar rules don't catch by themselves:**
 - **The implied subject of every verb is the candidate.** "; asked before a human" reads as the candidate asking. A fact about users or the artifact goes in a noun phrase ("; users' first stop before a human") or an artifact-modifying relative clause ("a bot users now @ before a human").
 - **No verbless noun phrase mid-bullet on a comma.** "…threads, answers as exact steps…" misparses as a list. Attach with a participle ("delivering answers as…"), "with", or a parenthetical.
 - **At most one absolute phrase.** "with the model only mapping…, a script computing…" needs a second read. For a two-part mechanism use an infinitive of purpose plus a participle ("Designed X to keep the model to Y, leaving Z to a script that…") or a colon with a compact list ("X: model maps the request to parameters, script computes the plan").
+- **Verbs belong to the thing that does them.** A database stores; the bot answers. "a knowledge base that answers" makes the reader stumble; "so the bot answers in exact steps" does not.
 - **Mechanism nouns at reader level.** "declared questions and dependencies" is design-doc shorthand; "a script that asks only for what is missing and orders the steps" is what a reader can picture.
 
 **A design-decision bullet needs a consequence.** Stating the architecture ("model fills slots, code decides") shows taste; a reader believes it only with a from→to or an adoption specific after it. The "from" may be the old failure ("from an agent that never produced a runnable plan to one that launches on the second message"); the ending is always the new state.
@@ -49,9 +58,9 @@ What these share: one artifact or technical act per bullet; the hard part is nam
 
 **Readability.** A smart reader outside the project understands every noun on first pass. Industry-standard technology names (React, Cinemachine, DOM, MCP) are fine; project-internal layer names, codenames and team shorthand are generalised or cut. No abbreviations the reader has to expand ("65–81s", "8 params"). If compressing makes it cryptic, keep the plain version.
 
-**Length.** 1–2 lines (about 170 characters at a normal layout). Never a second line with 1–4 orphan words.
+**Length.** 1–2 lines in the target layout (the user's current layout fits about 84 characters per line, so about 170). A third line is allowed only when every clause is a technical specific: a component, a number with a unit, a named mechanism. Never a final line with 1–4 orphan words.
 
-**Rhythm across a section.** Strongest bullet first. Openers differ. Skeletons differ: at most two bullets in a section end on a "; result" tail; the others end on a mechanism, a parenthetical specific, or carry their from→to inside the body. Two to four bullets per experience; coverage is not a goal.
+**Rhythm across a section.** Strongest bullet first. Openers differ. Skeletons differ: at most two bullets in a section end on a "; result" tail; the others end on a mechanism, a parenthetical specific, or carry their from→to inside the body. Two bullets never land on the same specific ("two messages" in one, "the second message" in the next reads as the same win twice). Lead with the bullet the target reader would phone you about, which is not always the one with the biggest number. Two to four bullets per experience; coverage is not a goal.
 
 ## 2. Workflow
 
@@ -75,7 +84,7 @@ For a new resume, target or experience, run all steps. For a one-line tweak, run
 ## 4. Numbers
 
 - Only numbers from the sources, exactly as stated, with their scope ("60 read the launch doc in 24 hours" is not "60 users").
-- Never estimate, round, convert currency, or invent scale. No bullet needs a metric.
+- Never estimate, round, convert currency, or invent scale. No bullet needs a metric. A design target or projection may appear only if the source labels it so and the bullet keeps the label ("targeting 500–600 MHz at an estimated 2.5 mW").
 - Never upgrade status: merged ≠ deployed, piloted ≠ adopted, proposed ≠ shipped.
 - Don't strike the user's numbers reflexively. A derived number (a complement, a ratio) is theirs if the arithmetic holds; ask what it measures, then find the wording that is honest and keeps the weight.
 - A bullet ends on a mechanism, a specific, or a gain. The old state appears only inside a from→to that ends on the gain. Never "stalled", "never worked", "failed" as the ending.

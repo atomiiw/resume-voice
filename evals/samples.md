@@ -25,6 +25,18 @@ User's own. Verb, artifact, appositive with for-whom and to-do-what, semicolon, 
 
 > Built and documented design systems (50+ variables, 40+ tokens) for product handoffs to support scalability and ensure design consistency.
 
+> Designed and implemented a custom 5-stage pipelined CPU in Verilog running at 25 MHz, featuring hazard bypassing and memory-mapped I/O for motor control, servo control, and keyboard interfacing.
+
+> Designing the XNOR banks, popcount trees, and threshold comparators for all 8 neuron lanes — each lane reduces a 16-bit XNOR comparison to a 5-bit population count via a half-adder/full-adder tree before a threshold comparator produces a 1-bit neuron output.
+
+> Leading redesign of the team's power distribution PCB, increasing continuous current capacity from 20A to 40A while integrating a 97.6% efficient 48V→12V converter, Hall-effect current sensing, precharge, emergency-stop, and protection circuitry.
+
+> Eliminated secret-data-dependent timing side channels across multiple tensor backend operations in a forked open-source ML framework (Burn) by rewriting branching logic into constant-time implementations.
+
+> Diagnosed and fixed an incorrect declassification boundary in an IFC-labeled training pipeline, correcting label propagation from the data-item level to the tensor level to restore compile-time security guarantees.
+
+(The last five are from a hardware engineer's resume the user rates highly; its layout is wider, about 110 characters per line, so these run 2–3 lines there.)
+
 Note what they share: one artifact or act per bullet; relative clauses only on the artifact ("that locks", "that collapsed"); comma-chained technical verbs; parenthetical specifics; a metric only where one exists; most end on a mechanism, not a number.
 
 ### Negatives (each must FAIL, with the reason the user gave)
