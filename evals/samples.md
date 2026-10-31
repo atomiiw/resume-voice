@@ -62,3 +62,7 @@ N6 — user verdict: "你写大学申请文书呢" (this is a college applicatio
 N7 — rejected in the same batch as N6; metaphor as a result. Fails R3, R7 (no measured result).
 > Split its planner in two: model translates the request into parameters, script computes the plan; a vague first message becomes a runnable plan after one round of plain-language questions.
 
+
+N8 — user verdict: "我读不懂" (I can't read it). Passed R1–R12 with all five judges in round 7. Fails R0.
+> Built /eval, a chat command for any skill writer to regression-test a skill, taking eval setup from expert-only to two messages — /eval's planner answers the first with plain-language choices for only what is missing and runs the eval on the second.
+> Rebuilt the support bot's knowledge base as a structured database, delivering answers as exact steps with the matching screenshot plus a live lookup of the user's task session; first stop before a human for users in a 4,500-member group.

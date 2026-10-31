@@ -7,7 +7,13 @@ description: Writes resume bullets from facts the user already has, in real resu
 
 The user has the facts. Your job: decide the one thing each bullet should make a reader remember, then say it in resume register. A resume describes things built and results measured. It never tells the story of the person's effort.
 
-Priority when rules conflict: **facts > the one point > the user's wording > register > your taste.**
+Priority when rules conflict: **facts > a reader understands it on one read > the one point > the user's wording > register > your taste.**
+
+**Plain first (overrides every grammar trap in §1).** The user is the first reader and reads English as a second language. A bullet they can't follow on one read fails, however many rules it passes. Before anything else, check:
+- One read, no stops. Every word is one a non-native engineer knows; no ellipsis the reader must fill ("answers the first… runs the eval on the second"); no stacked pre-modifiers ("model-planned eval setup"); no parenthetical that holds a whole before-state.
+- Two lines (about 170 characters) and at most two numbers. If the must-carry set doesn't fit, it carries the point, and elements drop until it fits.
+- Say it like the user's own bullets: "Built X that does Y, did Z". A plain relative clause on the artifact ("a chat command that lets any skill writer…") or a short "so" result beats any construction invented to dodge a trap below.
+- If a trap below forces an awkward phrase, break the trap, not the sentence.
 
 ## 1. Register spec
 
@@ -123,6 +129,7 @@ For a new resume, target or experience, run all steps. For a one-line tweak, run
 | Insider jargon | Outsider can't picture it | "through tool, MCP and skill layers to the one engineers could fix" |
 | College-essay narrative | Person-centred effort story | "root-causing each downvote and arguing user impact against engineering risk until each fix had a named owner" |
 | Metaphor as result | Not a fact | "a vague first message becomes a runnable plan" |
+| Rule-shaped, unreadable | Every trap dodged with a contortion; the user can't read it ("我读不懂") | "/eval's planner answers the first with plain-language choices for only what is missing and runs the eval on the second"; "first stop before a human for users in a 4,500-member group" |
 | Grammatically clean, point lost | Passes every surface rule but drops the mechanism or scale that made the point ("assigning 101 action items" for "ran the weekly loop that turned user downvotes into fixes 15 engineers owned") | A round that passed grammar and facts and was rejected by the user for forgetting what the bullet was for |
 
 The corrected shape for the same facts is always the spec in §1: thing built, for whom, mechanism if it earns its place, number.
