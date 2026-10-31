@@ -68,7 +68,7 @@ The from→to hangs on a verb that takes one ("cutting setup from…to…", "tak
 
 **Readability.** A smart reader outside the project understands every noun on first pass. Industry-standard technology names (React, Cinemachine, DOM, MCP) are fine; project-internal layer names, codenames and team shorthand are generalised or cut. No abbreviations the reader has to expand ("65–81s", "8 params"). If compressing makes it cryptic, keep the plain version.
 
-**Length.** 1–2 lines in the target layout (the user's current layout fits about 84 characters per line, so about 170). A third line is allowed only when every clause is a technical specific: a component, a number with a unit, a named mechanism. Never a final line with 1–4 orphan words.
+**Length.** 1–2 lines in the target layout (the user's current layout fits about 84 characters per line, so about 170). A third line is allowed only when every clause is a technical specific (a component, a number with a unit, a named mechanism) or a must-carry element from step 3. Never a final line with 1–4 orphan words.
 
 **Rhythm across a section.** Strongest bullet first. Openers differ. Skeletons differ: at most two bullets in a section end on a "; result" tail; the others end on a mechanism, a parenthetical specific, or carry their from→to inside the body. Two consecutive bullets never share a skeleton (two from→to bullets in a row, both landing on "two…", read as one shape twice). Two bullets never land on the same specific ("two messages" in one, "the second message" in the next reads as the same win twice). Lead with the bullet the target reader would phone you about, which is not always the one with the biggest number. Two to four bullets per experience; coverage is not a goal.
 
